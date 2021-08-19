@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Square : MonoBehaviour
@@ -31,7 +29,7 @@ public class Square : MonoBehaviour
 
     void Move()
     {
-        transform.rotation = Quaternion.LookRotation(Vector3.forward, _targetPosition);
+        //transform.rotation = Quaternion.LookRotation(Vector3.forward, _targetPosition);
         transform.position = Vector3.MoveTowards(transform.position, _targetPosition, _speed * Time.deltaTime);
         if (transform.position == _targetPosition)
         {
